@@ -1,6 +1,9 @@
 let char_build = {
     build_points: 50,
     grade: 9,
+    weapon: null,
+    outfit: null,
+    EGO: null,
 
     wrath: 0,
     gloom: 0,
@@ -11,10 +14,42 @@ let char_build = {
     sloth: 0,
 }
 
-let traits = ["trait1", "trait2", "trait3"];
+let traits = [
+    "agile", 
+    "bizarre", 
+    "calm", 
+    "chain_dashes", 
+    "hot-headed", 
+    "hypoxic", 
+    "immovable", 
+    "indomitable", 
+    "maniacal", 
+    "overprepared", 
+    "problem_solving", 
+    "proficient", 
+    "reactive", 
+    "resolute", 
+    "resourceful", 
+    "shimmering", 
+    "steadfast", 
+    "time_distortion", 
+    "blindspot", 
+    "coldness", 
+    "energetic", 
+    "leeching", 
+    "lunging", 
+    "thrusters", 
+    "methodical", 
+    "paranoid", 
+    "chromatic", 
+    "culinary", 
+    "garde", 
+    "rojima"
+];
+let char_traits = ["trait1", "trait2", "trait3"];
 
-function addTrait(trait, x) {
-    traits[x] = trait;
+function addTrait(x, y) {
+    char_traits.indexOf(x)
 }
 
 function increaseStat(sin, x) {
@@ -33,10 +68,7 @@ function decreaseStat(sin, x) {
     }
 }
 
-addTrait("traitTest", 0)
-
-for(let trait of traits) {
-    console.log(trait)
-}
+addTrait("agile", 0);
+console.log(char_traits.indexOf("trait2"));
 
 console.log(char_build);
