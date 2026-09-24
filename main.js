@@ -14,6 +14,10 @@ let char_build = {
     sloth: 0,
 }
 
+let weaponsList = ["weapon1", "weapon2"];
+let outfitsList = ["outfit1", "outfit2"];
+let egoList = ["ego1", "ego2"];
+
 let traits = [
     "agile", 
     "bizarre", 
@@ -48,8 +52,14 @@ let traits = [
 ];
 let char_traits = ["trait1", "trait2", "trait3"];
 
-function addTrait(x, y) {
-    char_traits.indexOf(x)
+function addTrait(trait, slot) {
+    if(traits.indexOf(trait) != -1) {
+        char_traits[slot] = trait;
+    }
+}
+
+function removeTrait(slot) {
+    char_traits[slot] = null;
 }
 
 function increaseStat(sin, x) {
@@ -69,6 +79,11 @@ function decreaseStat(sin, x) {
 }
 
 addTrait("agile", 0);
-console.log(char_traits.indexOf("trait2"));
+addTrait("hypoxic", 1);
+addTrait("bizarre", 2);
+console.log(char_traits);
 
+removeTrait(0)
+
+console.log(char_traits);
 console.log(char_build);
