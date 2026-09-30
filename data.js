@@ -3759,3 +3759,28 @@ export let traits = [
     misc: true
 },
 ];
+
+export let pagesList = [
+{
+    name: "",
+    lightCost: 0,
+    cooldown: 0,
+
+    status: [],
+    properties: [],
+    sinResonance: [],
+
+    effects: [],
+
+    pageCoins: [
+        {
+            minRoll: 0,
+            maxRoll: 0,
+            damageType: "",
+            properties: [],
+
+            effects: []
+        }
+    ]
+}
+];

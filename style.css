@@ -1,0 +1,64 @@
+body {
+    background-color: #222;
+    color: white;
+}
+
+.sinValue {
+    font-size: 45px;
+    top: 25px;
+}
+
+.sinButtons button {
+    width: 17.5px;
+    height: 17.5px;
+    padding: 0;
+}
+
+.sinButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sinControls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sinBox {
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    position: relative;
+}
+
+.sinContainer {
+    align-items: center;
+    position: absolute;
+    left: 140px;
+    top: 35px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+    width: 400px;
+}
+
+.sinRow {
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    width: 80%;
+    margin: auto;
+}
+
+.builder {
+    background-color: #333;
+    padding: 20px;
+}
