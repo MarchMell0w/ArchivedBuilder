@@ -3,6 +3,13 @@ body {
     color: white;
 }
 
+.sinPointsContainer {
+    position: relative;
+    left:235px;
+    top:15px;
+    font-size: 30px;
+}
+
 .sinValue {
     font-size: 45px;
     top: 25px;
@@ -39,7 +46,7 @@ body {
     align-items: center;
     position: absolute;
     left: 140px;
-    top: 35px;
+    top: 75px;
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
