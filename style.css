@@ -3,10 +3,59 @@ body {
     color: white;
 }
 
+.BuildLine {
+    margin-top: 1.5em; margin-bottom: 1.5em; border: 0; height: 0.2em;
+    background: linear-gradient(
+        to right, transparent 0%, transparent 20%,
+        currentColor 50%, transparent 80%, transparent 100%
+    );
+}
+
+.BuildTitle {
+    position: relative;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.BuildDesc {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+    padding: 25px;
+}
+
+.BuildDescTopText {
+    position: relative;
+    font-size: 30px; 
+    padding-left: 27.5px;
+    top: 2.5px;
+    left: 5px;
+}
+
+.BuildDescTextArea {
+    font-size: 16.5px;
+    width: 920px;
+    height: 110px;
+    padding-bottom: -15px;
+}
+
+.MainAreaControl {
+    position: absolute;
+    align-items: center;
+    left: 600px;
+    top: 150px;
+}
+
+.MainInfo {
+    position: relative;
+    width: 1000px;
+    height: 2000px;
+    background-color: white;
+    color: black;
+}
+
 .sinPointsContainer {
     position: relative;
-    left:235px;
-    top:15px;
     font-size: 30px;
 }
 
@@ -45,8 +94,8 @@ body {
 .sinContainer {
     align-items: center;
     position: absolute;
-    left: 140px;
-    top: 75px;
+    left: -35px;
+    top: 80px;
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
@@ -58,6 +107,23 @@ body {
 .sinRow {
     display: flex;
     align-items: center;
+}
+
+.buildTags {
+    padding-left: 30px;
+}
+
+.selectedTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.tagControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .page {
