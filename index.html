@@ -1,175 +1,442 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Archived Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class ="MainAreaControl">
+
+    <!-- Main Build Area -->
+    <div class="MainAreaControl">
+
         <div class="MainInfo">
+
+            <!-- Build Title -->
             <div class="BuildTitle">
                 Build Title
             </div>
+
+            <!-- Build Description -->
             <div class="BuildDescTopText">
                 Build Description
             </div>
+
             <div class="BuildDesc">
                 <textarea class="BuildDescTextArea">
-                    Description of the build. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Description of the build. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </textarea>
             </div>
+
+            <!-- Build Tags -->
             <div class="buildTags">
 
-            <div class="selectedTags" id="selectedTags">
+                <div class="selectedTags" id="selectedTags">
+                </div>
+
+                <div class="tagControls">
+
+                    <select id="tagSelect">
+                        <option value="">Choose a tag...</option>
+                        <option value="Solo">Solo</option>
+                        <option value="Beginner Friendly">Beginner Friendly</option>
+                        <option value="High Damage">High Damage</option>
+                        <option value="Support">Support</option>
+                        <option value="PvP">PvP</option>
+                    </select>
+
+                    <button type="button" id="addTagButton">
+                        + Add tag
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="tagControls">
-                <select id="tagSelect">
-                    <option value="">Choose a tag...</option>
-                    <option value="Solo">Solo</option>
-                    <option value="Beginner Friendly">Beginner Friendly</option>
-                    <option value="High Damage">High Damage</option>
-                    <option value="Support">Support</option>
-                    <option value="PvP">PvP</option>
-                </select>
-
-                <button type="button" id="addTagButton">+ Add tag</button>
-            </div>
-
-            </div>
             <hr class="BuildLine">
+
+
+            <!-- Weapon -->
+            <div class="weaponSection">
+
+                <div class="sectionTitle">
+                    WEAPON
+                </div>
+
+                <div class="weaponBox">
+
+                    <!-- Weapon Header -->
+                    <div class="weaponHeader">
+
+                        <button class="weaponName">
+                            Fixer's Blade
+                        </button>
+
+                        <button class="weaponExpandButton">
+                            >
+                        </button>
+
+                    </div>
+
+                    <!-- Weapon Details -->
+                    <div class="weaponDetails">
+
+                        <div class="weaponInfo">
+                            <div>Name: Fixer's Blade</div>
+                            <div>Grade: 2</div>
+                            <div>Damage Type: Slash</div>
+                            <div>Damage: 5</div>
+                            <div>Swing Delay: 0.5</div>
+                            <div>Hit Startup: 0.2</div>
+                        </div>
+
+
+                        <!-- Critical -->
+                        <div class="criticalSection">
+
+                            <div class="criticalName">
+                                Critical: Critical Slash
+                            </div>
+
+                            <div class="criticalContent">
+
+                                <div class="criticalGif">
+                                    GIF
+                                </div>
+
+                                <div class="criticalInfo">
+                                    <div>Page Information</div>
+                                    <div>Damage: ...</div>
+                                    <div>Properties: ...</div>
+                                    <div>Status: ...</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Outfit -->
+            <div class="outfitSection">
+
+                <div class="sectionTitle">
+                    OUTFIT NAME
+                </div>
+
+                <div class="outfitBox">
+
+                    <!-- Outfit Stats -->
+                    <div class="outfitStats">
+
+                        <!-- Outfit Image -->
+                        <button class="outfitImageButton">
+                            <img src="outfit-image.png" alt="Outfit Name">
+                        </button>
+
+                        <!-- Slash Resistance -->
+                        <div class="outfitStat">
+                            <img src="slash-icon.png" alt="Slash Resistance">
+                            <div>1.0</div>
+                        </div>
+
+                        <!-- Blunt Resistance -->
+                        <div class="outfitStat">
+                            <img src="blunt-icon.png" alt="Blunt Resistance">
+                            <div>1.0</div>
+                        </div>
+
+                        <!-- Pierce Resistance -->
+                        <div class="outfitStat">
+                            <img src="pierce-icon.png" alt="Pierce Resistance">
+                            <div>1.0</div>
+                        </div>
+
+                        <!-- Speed -->
+                        <div class="outfitStat">
+                            <img src="speed-icon.png" alt="Speed">
+                            <div>1.5</div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Keypage -->
+                    <div class="keypageBox">
+
+                        <div class="keypageDescription">
+                            DESCRIPTION HERE
+                        </div>
+
+                        <div class="keypageName">
+                            [Keypage Name]
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
         </div>
+
     </div>
+
+
+    <!-- Sins -->
     <div class="sinContainer">
+
         <div class="sinPointsContainer">
             Sin Points: 50
         </div>
+
+
+        <!-- Sin 1 -->
         <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 2 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 3 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 4 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 5 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 6 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
-                <div class="sinRow">
+
+
+        <!-- Sin 7 -->
+        <div class="sinRow">
+
             <div class="sinControls">
+
                 <div class="sinBox">
-                    <img src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355" width="80" height="80">
+                    <img
+                        src="https://static.wikia.nocookie.net/limbuscompany/images/1/11/LcbSinWrath.png/revision/latest?cb=20230304141355"
+                        width="80"
+                        height="80"
+                    >
                 </div>
+
                 <div class="sinButtonsContainer">
+
                     <div class="sinButtons">
                         <button>▲</button>
                     </div>
+
                     <div class="sinValue">
                         00
                     </div>
+
                     <div class="sinButtons">
                         <button>▼</button>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </body>
+
 </html>

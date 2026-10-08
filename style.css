@@ -1,43 +1,26 @@
+/* =========================
+   GENERAL
+   ========================= */
+
 body {
     background-color: #222;
     color: white;
 }
 
-.BuildLine {
-    margin-top: 1.5em; margin-bottom: 1.5em; border: 0; height: 0.2em;
-    background: linear-gradient(
-        to right, transparent 0%, transparent 20%,
-        currentColor 50%, transparent 80%, transparent 100%
-    );
+.page {
+    width: 80%;
+    margin: auto;
 }
 
-.BuildTitle {
-    position: relative;
-    font-size: 50px;
-    padding: 30px;
+.builder {
+    background-color: #333;
+    padding: 20px;
 }
 
-.BuildDesc {
-    position: relative;
-    bottom: 10px;
-    left: 5px;
-    padding: 25px;
-}
 
-.BuildDescTopText {
-    position: relative;
-    font-size: 30px; 
-    padding-left: 27.5px;
-    top: 2.5px;
-    left: 5px;
-}
-
-.BuildDescTextArea {
-    font-size: 16.5px;
-    width: 920px;
-    height: 110px;
-    padding-bottom: -15px;
-}
+/* =========================
+   MAIN BUILD AREA
+   ========================= */
 
 .MainAreaControl {
     position: absolute;
@@ -54,60 +37,59 @@ body {
     color: black;
 }
 
-.sinPointsContainer {
+
+/* =========================
+   BUILD TITLE & DESCRIPTION
+   ========================= */
+
+.BuildTitle {
+    position: relative;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.BuildDescTopText {
     position: relative;
     font-size: 30px;
+    padding-left: 27.5px;
+    top: 2.5px;
+    left: 5px;
 }
 
-.sinValue {
-    font-size: 45px;
-    top: 25px;
-}
-
-.sinButtons button {
-    width: 17.5px;
-    height: 17.5px;
-    padding: 0;
-}
-
-.sinButtonsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sinControls {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.sinBox {
-    background-color: aqua;
-    width: 80px;
-    height: 80px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
-    margin: auto;
+.BuildDesc {
     position: relative;
+    bottom: 10px;
+    left: 5px;
+    padding: 25px;
 }
 
-.sinContainer {
-    align-items: center;
-    position: absolute;
-    left: -35px;
-    top: 80px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    height: 800px;
-    width: 400px;
+.BuildDescTextArea {
+    font-size: 16.5px;
+    width: 920px;
+    height: 110px;
+    padding-bottom: -15px;
 }
 
-.sinRow {
-    display: flex;
-    align-items: center;
+.BuildLine {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: 0;
+    height: 0.2em;
+
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 20%,
+        currentColor 50%,
+        transparent 80%,
+        transparent 100%
+    );
 }
+
+
+/* =========================
+   BUILD TAGS
+   ========================= */
 
 .buildTags {
     padding-left: 30px;
@@ -126,12 +108,229 @@ body {
     gap: 8px;
 }
 
-.page {
-    width: 80%;
-    margin: auto;
+
+/* =========================
+   WEAPON
+   ========================= */
+
+.weaponSection {
+    padding: 25px;
 }
 
-.builder {
-    background-color: #333;
-    padding: 20px;
+.sectionTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.weaponBox {
+    width: 90%;
+    border: 2px solid black;
+}
+
+.weaponHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.weaponName {
+    border: 2px solid black;
+    padding: 10px 20px;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+.weaponExpandButton {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   WEAPON CRITICAL
+   ========================= */
+
+.criticalSection {
+    margin-top: 25px;
+}
+
+.criticalName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.criticalContent {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.criticalGif {
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criticalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* =========================
+   OUTFIT
+   ========================= */
+
+.outfitSection {
+    padding: 25px;
+}
+
+.outfitBox {
+    width: 90%;
+    border: 2px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   OUTFIT STATS
+   ========================= */
+
+.outfitStats {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 5px 5px 20px 5px;
+}
+
+.outfitImageButton {
+    width: 160px;
+    height: 140px;
+    padding: 0;
+
+    background-color: white;
+    border: 2px solid black;
+
+    cursor: pointer;
+}
+
+.outfitImageButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.outfitStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 20px;
+}
+
+.outfitStat img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   KEYPAGE
+   ========================= */
+
+.keypageBox {
+    width: 95%;
+    min-height: 270px;
+
+    margin: 0 auto;
+
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    padding: 35px;
+}
+
+.keypageDescription {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.keypageName {
+    font-size: 18px;
+}
+
+
+/* =========================
+   SINS
+   ========================= */
+
+.sinContainer {
+    align-items: center;
+    position: absolute;
+    left: -35px;
+    top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    height: 800px;
+    width: 400px;
+}
+
+.sinPointsContainer {
+    position: relative;
+    font-size: 30px;
+}
+
+.sinRow {
+    display: flex;
+    align-items: center;
+}
+
+.sinControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sinBox {
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sinButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sinButtons button {
+    width: 17.5px;
+    height: 17.5px;
+    padding: 0;
+}
+
+.sinValue {
+    font-size: 45px;
+    top: 25px;
 }
